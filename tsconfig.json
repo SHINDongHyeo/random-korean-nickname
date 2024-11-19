@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "module": "ES2020",
+    "target": "ES2016",
     "moduleResolution": "node",
     "outDir": "./dist",
     "esModuleInterop": true,
