@@ -3,10 +3,12 @@
   "version": "1.0.6",
   "description": "무작위 한글 닉네임 생성 패키지",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "postbuild": "cp dist/index.js dist/index.mjs && cp dist/index.js dist/index.cjs",
     "start": "tsc --watch"
   },
   "repository": {
@@ -26,5 +28,11 @@
   "homepage": "https://github.com/SHINDongHyeo/random-korean-nickname#readme",
   "devDependencies": {
     "typescript": "^5.6.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
   }
 }
