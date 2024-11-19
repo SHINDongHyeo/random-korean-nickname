@@ -1,0 +1,29 @@
+{
+  "name": "random-korean-nickname",
+  "version": "1.0.0",
+  "description": "무작위 한글 닉네임 생성 패키지",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHINDongHyeo/random-korean-nickname.git"
+  },
+  "keywords": [
+    "random",
+    "korean",
+    "nickname"
+  ],
+  "author": "신동혁",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SHINDongHyeo/random-korean-nickname/issues"
+  },
+  "homepage": "https://github.com/SHINDongHyeo/random-korean-nickname#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
