@@ -1,8 +1,12 @@
-export function newRandomNick(length = 8) {
-    const characters = "가나다라마바사아자차카타파하";
-    let result = "";
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
+import { firstWords } from "./firstWords";
+import { secondWords } from "./secondWords";
+import { thirdWords } from "./thirdWords";
+export function newRandomNick(customFirstWords, customSecondWords, customThirdWords) {
+    const firstWord = pickOne(customFirstWords || firstWords);
+    const secondWord = pickOne(customSecondWords || secondWords);
+    const thirdWord = pickOne(customThirdWords || thirdWords);
+    return `${firstWord}${secondWord}${thirdWord}`;
+}
+function pickOne(words) {
+    return words[Math.floor(Math.random() * words.length)];
 }
