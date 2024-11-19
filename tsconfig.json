@@ -7,8 +7,9 @@
     "esModuleInterop": true,
     "strict": true,
     "declaration": true,
+    "declarationDir": "./dist",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "dist/random-korean-nickname.d.ts"]
 }
