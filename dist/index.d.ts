@@ -1,1 +1,1 @@
-export default function newRandomNick(length?: number): string;
+export declare function newRandomNick(length?: number): string;
