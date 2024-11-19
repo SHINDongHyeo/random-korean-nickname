@@ -1,6 +1,6 @@
-const { firstWords } = require("./firstWords");
-const { secondWords } = require("./secondWords");
-const { thirdWords } = require("./thirdWords");
+const { firstWords } = require("./firstWords.cjs");
+const { secondWords } = require("./secondWords.cjs");
+const { thirdWords } = require("./thirdWords.cjs");
 function newRandomNick(customFirstWords, customSecondWords, customThirdWords) {
   const firstWord = pickOne(customFirstWords || firstWords);
   const secondWord = pickOne(customSecondWords || secondWords);

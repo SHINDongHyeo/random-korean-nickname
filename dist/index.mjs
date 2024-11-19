@@ -1,6 +1,6 @@
-import { firstWords } from "./firstWords";
-import { secondWords } from "./secondWords";
-import { thirdWords } from "./thirdWords";
+import { firstWords } from "./firstWords.mjs";
+import { secondWords } from "./secondWords.mjs";
+import { thirdWords } from "./thirdWords.mjs";
 export function newRandomNick(
   customFirstWords,
   customSecondWords,
