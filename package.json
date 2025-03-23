@@ -1,6 +1,6 @@
 {
   "name": "random-korean-nickname",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "무작위 한글 닉네임 생성 패키지",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -34,5 +34,8 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
+  },
+  "dependencies": {
+    "random-korean-nickname": "^1.1.1"
   }
 }
