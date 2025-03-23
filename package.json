@@ -1,6 +1,6 @@
 {
   "name": "random-korean-nickname",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "무작위 한글 닉네임 생성 패키지",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "postbuild": "cp dist/index.js dist/index.mjs && cp dist/index.js dist/index.cjs",
+    "postbuild": "cross-env-shell 'for file in dist/*.js; do cp $file ${file%.js}.mjs && cp $file ${file%.js}.cjs; done'",
     "start": "tsc --watch"
   },
   "repository": {
@@ -36,6 +36,7 @@
     }
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "random-korean-nickname": "^1.1.1"
   }
 }
